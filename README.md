@@ -1,0 +1,1 @@
+# Solving_equation_using_GD
