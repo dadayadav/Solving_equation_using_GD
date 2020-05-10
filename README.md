@@ -1,8 +1,8 @@
 # Solving_equation_using_GD
-### To understand <code style="font:solid; color:'blue'">Gradient Descent</code> algorithm, I make a simple linear equation solver program, we use mse as a loss function.
+#### To understand <code><b style="font:solid; color:'blue'">Gradient Descent</b></code> algorithm, I make a simple linear equation solver program, we use mse as a loss function.
 <p>-------------------------------------------</p>
 In this <code>model_code.py</code> file:
-```python
+``` python
 #input 
 # ---------------------------------------------------------
 A = np.array([[1,1,0,0], [0,0,1,-1], [1,0,1,0], [0,1,0,1]])
