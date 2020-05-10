@@ -1,6 +1,6 @@
 # Solving_equation_using_GD
 #### To understand <code><b style="font:solid; color:'blue'">Gradient Descent</b></code> algorithm, I make a simple linear equation solver program, we use mse as a loss function.
-<p>-------------------------------------------</p>
+
 In this <code>model_code.py</code> file:
 ``` python
 #input 
@@ -41,5 +41,5 @@ Also, you can visualize live error plot by uncomment these line of code
      live_plot(data)
 '''   
 ```
-## Further you can try to error function, optimization, solving nonlinear equation etc.
+## Further you can try to change error function, optimization, solving nonlinear equation etc.
 
