@@ -1,5 +1,5 @@
 # Solving_equation_using_GD
-#### To understand **<code>Gradient Descent</code>** algorithm, I make a simple linear equation solver program, we use mse as a loss function.
+#### To understand **<code>Gradient Descent</code>** algorithm, I make a simple linear equation solver program, we use Linear Least Square as a loss function.
 ## Usage
 In this <code>model_code.py</code> file:
 ``` python
