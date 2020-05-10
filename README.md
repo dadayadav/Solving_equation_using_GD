@@ -15,10 +15,10 @@ x = np.random.rand(b.shape[0],1)
 Make a matrix such that <code>Ax = b</code> can satisfy.
 For the above example eq are:
 <br>
-x1+x2 = 8   # here assume 0*y1+0*y2<br>
-y1-y2 = 6   # assume 0*x1+0*x2<br>
-x1+y1 = 12  # assume 0*x2+x*y2<br>
-x2+y2 = 8   # assume 0*x1+0*y1<br>
+<code>x1+x2 = 8</code>   # here assume 0*y1+0*y2<br>
+<code>y1-y2 = 6</code>   # assume 0*x1+0*x2<br>
+<code>x1+y1 = 12</code>  # assume 0*x2+x*y2<br>
+<code>x2+y2 = 8</code>   # assume 0*x1+0*y1<br>
 
 Then, 
 Matrix A = [1 1 0 0
