@@ -1,6 +1,6 @@
 # Solving_equation_using_GD
 #### To understand <code><b style="font:solid; color:'blue'">Gradient Descent</b></code> algorithm, I make a simple linear equation solver program, we use mse as a loss function.
-
+These are <b style='color:red'>red words</b>
 ## Usage
 In this <code>model_code.py</code> file:
 ``` python
