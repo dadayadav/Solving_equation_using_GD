@@ -8,11 +8,17 @@ import collections
 import numpy as np
 %matplotlib inline
 # code
+
+#input 
+# ---------------------------------------------------------
 A = np.array([[1,1,0,0], [0,0,1,-1], [1,0,1,0], [0,1,0,1]])
 # we also need b matrix
 b = np.array([8,6,13,8]).reshape((4,1))
 # we need a random x initializer with shape = (4,1)
-x = np.random.rand(4,1) 
+x = np.random.rand(b.shape[0],1) 
+# ---------------------------------------------------------
+
+
 print("A:", A)
 print()
 print("b:",b)
@@ -60,21 +66,23 @@ x_copy = x
 X = np.dot(A,x_copy)
 z = X-b
 cost_function = 0.5*((np.linalg.norm(z, ord=2))**2)
-it = 0
+iteration = 0
 mse_ = []
-
-while(stop_value(A,b,x_copy)>tol and it<100000):
-#     print(stop_value(A,b,x))
+it= 0
+while(stop_value(A,b,x_copy)>tol and it<iteration):
     x_copy = x_copy-learning_rate*(A.T.dot((np.dot(A,x_copy)-b)))
     Z = np.dot(A,x_copy)-b
     mse_.append(mse(Z))
-    it += 1
-
-# data = collections.defaultdict(list)
-# for i in mse_:
-#     data['mse'].append(mse(Z))
-#     live_plot(data)
     
+    it += 1
+    
+# if you want live error then uncomment below 4 line code
+'''
+ data = collections.defaultdict(list)
+ for i in mse_:
+     data['mse'].append(mse(Z))
+     live_plot(data)
+'''    
 x_plot = np.arange(len(mse_)).reshape((len(mse_),1))
 y_plot = np.array(mse_).reshape((len(mse_),1))
 plt.plot(x_plot[:],y_plot[:],color= 'blue')
