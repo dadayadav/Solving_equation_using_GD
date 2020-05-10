@@ -20,13 +20,15 @@ For the above example eq are:
 <code>x1+y1 = 12</code>  # assume 0*x2+x*y2<br>
 <code>x2+y2 = 8</code>   # assume 0*x1+0*y1<br>
 
-Then, 
+Then,
+``` bash
 Matrix A = [1 1 0 0
             0 0 1 -1
             1 0 1 0
             0 1 0 0
             ]
 and b = [8 6 12 8]
+```
 # ---------------------------------------------------------
 
 Now, you can play with learning_rate, tol, iteration etc
