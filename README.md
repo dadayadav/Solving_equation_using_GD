@@ -1,7 +1,7 @@
 # Solving_equation_using_GD
 #### To understand <code><b style="font:solid; color:'blue'">Gradient Descent</b></code> algorithm, I make a simple linear equation solver program, we use mse as a loss function.
 
-#### Usage
+## Usage
 In this <code>model_code.py</code> file:
 ``` python
 #input 
